@@ -33,8 +33,8 @@ function NavBar(props) {
                 <Navbar.Brand href="/">Store <strong>Books</strong></Navbar.Brand>
                 <Nav className="me-auto">
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/add">Add_<strong>Books</strong></Nav.Link>
-                    <Nav.Link href="#pricing"><strong>Delete</strong></Nav.Link>
+                    {/*<Nav.Link href="/add">Add_<strong>Books</strong></Nav.Link>*/}
+                    {/*<Nav.Link href="#pricing"><strong>Delete</strong></Nav.Link>*/}
                 </Nav>
             </Container>
         </Navbar>

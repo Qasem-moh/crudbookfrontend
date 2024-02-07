@@ -14,14 +14,13 @@ function RenderData({data}) {
                             <Card style={{ width: '25rem' }} key={item.id} className=''>
                                 <Card.Img variant="top" src={item.cover} className="min-h-60 max-h-20" />
                                 <Card.Body className="min-h-100 max-h-100 overflow-hidden">
-                                    <Card.Title>{item.title}</Card.Title>
-                                    <Card.Title>{item._id}</Card.Title>
+                                    <Card.Title>{item.title.split(' ').slice(0,5).join(' ') + " ..."}</Card.Title>
                                     <Card.Text>
                                         {item.description.split(' ').slice(0,35).join(' ')  }
                                     </Card.Text>
-                                    <strong>......</strong>
+
                                     <Link to={`/details/${item._id}`}>
-                                        <Button className='primary'>More</Button>
+                                        <a href=""><strong> Read More </strong></a>
                                     </Link>
                                 </Card.Body>
                             </Card>
