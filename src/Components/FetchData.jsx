@@ -1,6 +1,5 @@
 import React, {useEffect, useReducer} from 'react';
 import axios from "axios";
-import Spinner from './Spinner'
 import GrowExample from "./Spinner";
 import RenderData from "./RenderData";
 const initialState = {
