@@ -1,5 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import {Link} from "react-router-dom";
+import {Button} from "react-bootstrap";
 function RenderData({data}) {
     console.log(data)
     console.log(typeof data)
@@ -18,6 +20,9 @@ function RenderData({data}) {
                                         {item.description.split(' ').slice(0,35).join(' ')  }
                                     </Card.Text>
                                     <strong>......</strong>
+                                    <Link to={`/details/${item._id}`}>
+                                        <Button className='primary'>More</Button>
+                                    </Link>
                                 </Card.Body>
                             </Card>
                         </div>

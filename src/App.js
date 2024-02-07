@@ -1,6 +1,7 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from "./Components/Home";
 import NavBar from "./Components/NavBar";
+import Details from "./Components/Details";
 
 function Add() {
     return null;
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="add" element={<Add />} />
           <Route path="delete" element={<Delete />} />
+                <Route path="details/:id" element={<Details/>}/>
         </Routes>
       </BrowserRouter>
     </div>
