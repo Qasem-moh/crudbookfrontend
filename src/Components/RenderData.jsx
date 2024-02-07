@@ -4,18 +4,20 @@ function RenderData({data}) {
     console.log(data)
     console.log(typeof data)
     return (
-        <div>
+        <div className=''>
             {
                 data.map((item) => {
                     return(
-                        <div key={item.id} >
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src={item.cover} />
-                                <Card.Body>
+                        <div className='justify-center inline-grid p-3 ' key={item.id} >
+                            <Card style={{ width: '25rem' }} key={item.id} className=''>
+                                <Card.Img variant="top" src={item.cover} className="min-h-60 max-h-20" />
+                                <Card.Body className="min-h-100 max-h-100 overflow-hidden">
                                     <Card.Title>{item.title}</Card.Title>
+                                    <Card.Title>{item._id}</Card.Title>
                                     <Card.Text>
-                                        {item.description}
+                                        {item.description.split(' ').slice(0,35).join(' ')  }
                                     </Card.Text>
+                                    <strong>......</strong>
                                 </Card.Body>
                             </Card>
                         </div>
