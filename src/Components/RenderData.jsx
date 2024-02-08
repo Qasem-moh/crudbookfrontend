@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import {Link} from "react-router-dom";
-import {Button} from "react-bootstrap";
 function RenderData({data}) {
     console.log(data)
     console.log(typeof data)
@@ -10,7 +9,7 @@ function RenderData({data}) {
             {
                 data.map((item) => {
                     return(
-                        <div className='justify-center inline-grid p-3 ' key={item.id} >
+                        <div className='justify-center inline-grid p-3 shadow shadow-orange' key={item.id} >
                             <Card style={{ width: '25rem' }} key={item.id} className=''>
                                 <Card.Img variant="top" src={item.cover} className="min-h-60 max-h-20" />
                                 <Card.Body className="min-h-100 max-h-100 overflow-hidden">

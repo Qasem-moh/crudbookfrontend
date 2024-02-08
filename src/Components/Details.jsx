@@ -1,10 +1,7 @@
 import React, {useEffect, useReducer} from 'react';
-import {Link, useParams} from "react-router-dom";
+import { useParams} from "react-router-dom";
 import axios from "axios";
-import GrowExample from "./Spinner";
-import RenderData from "./RenderData";
 import Card from "react-bootstrap/Card";
-import {Button} from "react-bootstrap";
 
 const initialState = {
     loading: true, error: '', books: {}
